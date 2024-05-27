@@ -1,0 +1,52 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.email-container{
+	height: 30px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	margin-top: 3px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.email-container:hover{
+	background-color: rgb(217, 248, 250);
+	cursor:pointer;
+	box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.60);
+}
+.inner-email-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-sender-subject-container{
+	display: flex;
+	flex-direction: row;
+}
+.three-dot-menu{
+	margin-left: 20px;
+}
+.subject{
+	margin-left: 150px;
+}
+h6{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+i{
+	margin-top: 0px;
+}
+.send-date{
+	margin-right: 5px;
+}

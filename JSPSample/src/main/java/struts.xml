@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="default" extends="struts-default">
+        
+        <action name="signup" class="com.example.actions.SignupActions">
+            <result name="success">index.jsp</result>
+            <result name="error">signup.jsp</result>
+        </action>
+        
+      	<action name="login" class="com.example.actions.LoginActions">
+            <result name="success">home.jsp</result>
+            <result name="error">index.jsp</result>
+        </action>
+        
+        <action name="getEmails" class="com.example.actions.LoginActions">
+            <result name="success">home.jsp</result>
+            <result name="error">index.jsp</result>
+        </action>
+        
+        <action name="chooseMenu" class="com.example.actions.MenuActions">
+        	<result name="success">home.jsp</result>
+        </action>
+        
+        <action name="compose" class="com.example.actions.ComposeActions">
+        	<result name="success">home.jsp</result>
+            <result name="error">ComposeEmail.jsp</result>
+        </action>
+       
+    </package>
+</struts>
+
